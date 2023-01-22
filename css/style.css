@@ -137,6 +137,10 @@ button:hover {
    p.product_price_old {
       font-size: 14px;
    }
+
+   button:active {
+      cursor: pointer;
+   }
 }
 
 @media (max-width: 426px) {
@@ -166,5 +170,9 @@ button:hover {
 
    p.product_price_old {
       font-size: 14px;
+   }
+
+   button:active {
+      cursor: pointer;
    }
 }
