@@ -42,15 +42,11 @@ body {
    justify-content: space-between;
 }
 
-h1 {}
-
 .category {
    font-family: Montserrat;
    color: hsl(228, 12%, 48%);
    letter-spacing: 4px;
 }
-
-h2 {}
 
 .product_name {
    font-family: Fraunces;
@@ -64,8 +60,6 @@ p {
    font-weight: 500;
    color: hsl(228, 12%, 48%);
 }
-
-s {}
 
 .product_description {
    line-height: 24px;
@@ -91,8 +85,6 @@ s {}
    justify-content: center;
 }
 
-button {}
-
 button:hover {
    background: hsl(156, 86%, 11%);
    cursor: pointer;
@@ -117,7 +109,37 @@ button:hover {
 }
 
 /* mobile */
-@media (max-width: 375px) {
+@media (max-width: 376px) {
+   .card>div {
+      width: 350px;
+   }
+
+   .card {
+      flex-direction: column;
+      height: 640px;
+   }
+
+   .product-about {
+      height: 400px;
+      padding: 28px;
+   }
+
+   .product-image {
+      background-image: url(../images/image-product-mobile.jpg);
+      height: 250px;
+      border-radius: 10px 10px 0 0;
+   }
+
+   p.product_price_new {
+      font-size: 32px;
+   }
+
+   p.product_price_old {
+      font-size: 14px;
+   }
+}
+
+@media (max-width: 426px) {
    .card>div {
       width: 350px;
    }
