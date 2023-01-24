@@ -9,7 +9,6 @@
 body {
    background-color: hsl(30, 38%, 92%);
    min-height: 100vh;
-   max-width: 100%;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -81,6 +80,7 @@ p {
 }
 
 button {}
+
 button:hover {
    background: hsl(156, 86%, 11%);
    cursor: pointer;
@@ -105,14 +105,15 @@ button:hover {
 }
 
 /*----------------------Mobile----------------------*/
-@media (max-width: 376px),
-(max-width: 426px) {
+@media (max-width: 375px),
+(max-width: 425px) {
    .card>div {
       width: 350px;
    }
 
    .card {
       margin-top: 5px;
+      margin-bottom: 5px;
       flex-direction: column;
       height: 640px;
    }
