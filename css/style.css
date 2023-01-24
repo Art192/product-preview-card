@@ -28,10 +28,8 @@ body {
 
 .product-image {
    display: flex;
-   width: 100%;
    border-radius: 10px 0 0 10px;
    background-image: url(../images/image-product-desktop.jpg);
-   background-position: center;
    background-size: cover;
 }
 
@@ -43,8 +41,6 @@ body {
 }
 
 .category {
-   font-family: Montserrat;
-   color: hsl(228, 12%, 48%);
    letter-spacing: 4px;
 }
 
@@ -63,28 +59,28 @@ p {
 
 .product_description {
    line-height: 24px;
-   font-size: 14px;
 }
 
 .price {
    display: flex;
    align-items: center;
-   gap: 24px;
+   gap: 20px;
 }
 
 .product_price_new {
    font-family: Fraunces;
-   font-size: 28px;
+   font-size: 32px;
    color: hsl(158, 36%, 37%);
 }
 
 .product_price_old {
    text-decoration: line-through;
-   font-size: 12px;
+   font-size: 14px;
    display: flex;
    justify-content: center;
 }
 
+button {}
 button:hover {
    background: hsl(156, 86%, 11%);
    cursor: pointer;
@@ -108,13 +104,15 @@ button:hover {
    color: hsl(0, 0%, 100%);
 }
 
-/* mobile */
-@media (max-width: 376px) {
+/*----------------------Mobile----------------------*/
+@media (max-width: 376px),
+(max-width: 426px) {
    .card>div {
       width: 350px;
    }
 
    .card {
+      margin-top: 5px;
       flex-direction: column;
       height: 640px;
    }
@@ -135,44 +133,11 @@ button:hover {
    }
 
    p.product_price_old {
-      font-size: 14px;
+      font-size: 12px;
    }
 
    button:active {
-      cursor: pointer;
-   }
-}
-
-@media (max-width: 426px) {
-   .card>div {
-      width: 350px;
-   }
-
-   .card {
-      flex-direction: column;
-      height: 640px;
-   }
-
-   .product-about {
-      height: 400px;
-      padding: 28px;
-   }
-
-   .product-image {
-      background-image: url(../images/image-product-mobile.jpg);
-      height: 250px;
-      border-radius: 10px 10px 0 0;
-   }
-
-   p.product_price_new {
-      font-size: 32px;
-   }
-
-   p.product_price_old {
-      font-size: 14px;
-   }
-
-   button:active {
-      cursor: pointer;
+      background: hsl(156, 86%, 11%);
+      pointer-events: none;
    }
 }
